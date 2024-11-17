@@ -10,7 +10,7 @@ class Vehiculo(models.Model):
 
     def __str__(self):
         return str(self.nombre)
-class mantenimiento (models.Model):
+class Mantenimiento (models.Model):
     Vehiculo = models.ForeignKey('vehiculo',on_delete= models.CASCADE)
     fecha =  models.DateField()
     observaciones = models.TextField()
